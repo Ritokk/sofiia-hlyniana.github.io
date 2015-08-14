@@ -2,9 +2,96 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Lesson 2. Task 3</title>
 </head>
 <body>
+    <form action="http://example.org/" enctype="multipart/form-data" method="post">
+        <div>
+            <p>
+                <label for="user-name">Name</label><br/>
+                <input type="text" name="user-name" id="user-name"/>
+            </p>
+
+            <p>
+                <label for="user-email">Email</label><br/>
+                <input type="email" name="user-email" id="user-email" />
+            </p>
+        </div>
+
+        <div>
+            <span>Sex</span><br/>
+            <input type="radio" id="male" name="sex" value="male"/>
+            <label for="male">Male</label>
+            <input type="radio" id="female" name="sex" value="female"/>
+            <label for="female">Female</label>
+        </div>
+
+        <div>
+            <p>
+                <span>Current status</span><br/>
+                <input type="checkbox" id="student" name="current-status1" value="student"/>
+                <label for="student">Student</label><br/>
+                <input type="checkbox" id="employed" name="current-status2" value="employed"/>
+                <label for="employed">Employed</label><br/>
+                <input type="checkbox" id="unemployed" name="current-status3" value="unemployed"/>
+                <label for="unemployed">Unemployed</label>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <label for="month-of-birth">Month</label> and <label for="year-of-birth">Year</label> of birth<br/>
+                <select name="month" id="month-of-birth">
+                    <option value="january">January</option>
+                    <option value="february">February</option>
+                    <option value="march">March</option>
+                    <option value="april">April</option>
+                </select>
+                <select name="year" id="year-of-birth">
+                    <option value="1984">1984</option>
+                    <option value="1985">1985</option>
+                    <option value="1986">1986</option>
+                    <option value="1987">1987</option>
+                </select>
+            </p>
+        </div>
+
+        <div>
+            <label for="skills-techs"><span>Skills and Technologies</span></label><br/>
+            <select name="skills-techs" id="skills-techs" size="10" multiple>
+                <optgroup label="Tech skills">
+                    <option value="html">HTML</option>
+                    <option value="css">CSS</option>
+                    <option value="javascript">JavaScript</option>
+                    <option value="git">git</option>
+                </optgroup>
+                <optgroup label="Soft Skills">
+                    <option value="time-management">Time management</option>
+                    <option value="proactivity">Proactivity</option>
+                    <option value="teamwork">Teamwork</option>
+                    <option value="leadership">Leadership</option>
+                </optgroup>
+            </select>
+        </div>
+
+        <div>
+            <p>
+                <label for="photo">Photo</label><br/>
+                <input type="file" accept="image/*" id="photo" name="img"/>
+            </p>
+        </div>
+
+        <div>
+            <p>
+                <label for="comments">Comments</label><br/>
+                <textarea rows="7" name="comments" id="comments"></textarea>
+            </p>
+            <p>
+                <input type="submit" name="submit" value="Save"/>
+            </p>
+        </div>
+
+    </form>
 
 </body>
 </html>

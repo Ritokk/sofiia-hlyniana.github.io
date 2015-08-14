@@ -2,9 +2,114 @@
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title></title>
+    <title>Lesson 2. Task 1</title>
+    <link href='http://fonts.googleapis.com/css?family=Gentium+Basic' rel='stylesheet' type='text/css'>
+    <style>
+        /* Just a short newbie try to use some CSS properties and selectors */
+        body {
+            max-height: 100%;
+            margin: 10px;
+            font-family: 'Gentium Basic', serif;
+        }
+        div {
+            padding: 10px;;
+            border-radius: 5px;
+        }
+        div:hover {
+            border: 3px ridge lightseagreen;
+        }
+        mark {
+            background-color: cornflowerblue;
+        }
+        p:hover, address:hover {
+            font-weight: bold;
+        }
+        .text-formatting {
+            background: linear-gradient(90deg, #70e1f5 10%, #ffd194 90%);
+        }
+        .phrase-tags {
+            background: linear-gradient(90deg, #ffd194 10%, #70e1f5 90%);
+        }
+        .citing {
+            background: linear-gradient(90deg, #70e1f5 10%, #ffd194 90%);
+        }
+    </style>
 </head>
 <body>
+    <!--Paragraphs inside <del> and <ins> tags, <mark> tag-->
+    <div class="text-formatting">
+        <span><code>del</code></span>
+        <del><p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore doloremque error illo non perferendis quia
+            repellendus totam ullam. Eligendi eum expedita explicabo itaque laboriosam odio recusandae sequi, voluptatibus.
+            Reprehenderit, voluptatem.
+        </p></del>
+        <span><code>ins</code></span>
+        <ins><p>Ab ad aspernatur commodi cumque ducimus est eum laborum, maxime neque nihil quaerat quia quibusdam quidem reiciendis
+            tempora ut vel veniam voluptatibus. Aliquam nemo nisi non numquam odit placeat provident?</p></ins>
+        <span><code>mark</code></span>
+        <p>
+            <mark>Cum facere provident quidem quisquam tempore? Ad, aliquid blanditiis consequatur deserunt ea fuga illum in, maiores
+                mollitia numquam praesentium quia recusandae rem repellendus ullam. Alias aut esse illum minus vero!</mark>
+        </p>
+    </div>
+
+    <!--Phrase tags: <dfn>, <samp>, <code>, <kbd>-->
+
+    <div class="phrase-tags">
+        <span><code>dfn</code></span>
+        <p>
+            <dfn>Lorem ipsum</dfn> dolor sit amet, consectetur adipisicing elit. Alias optio similique veniam voluptates?
+            Consectetur, cupiditate excepturi magni odit quas quis tempore. Aspernatur dicta ea exercitationem laudantium
+            libero neque optio quos.
+        </p>
+        <span><code>kbd</code></span>
+        <p>
+            Сочетание клавиш <kbd>Win</kbd> + <kbd>Tab</kbd> позволяет перемещаться между окнами открытых програм в <abbr
+                title="Операционная Система">ОС</abbr> Windows.
+        </p>
+        <span><code>var</code></span>
+        <p>
+            var <var>mass</var> = <var>function</var> (height, activity)
+        </p>
+        <span><code>samp</code></span>
+        <p>
+            <samp>Sample output from a computer program</samp>
+        </p>
+    </div>
+
+    <!--HTML quotation and citation elements-->
+    <div class="citing">
+        <span><code>blockquote</code></span>
+        <blockquote cite="https://learn.javascript.ru/function-basics">
+            <p>
+                Чтобы не повторять один и тот же код во многих местах, придуманы функции.
+                Функции являются основными <q>строительными блоками</q> программы.
+                Примеры встроенных функций в JavaScript — это <code>alert(message)</code>,
+                <code>prompt(message, default)</code> и <code>confirm(question)</code>. Но можно создавать и свои.
+            </p>
+        </blockquote>
+        <span><code>cite</code></span>
+        <p>
+            <cite>Fear and Loathing in Las Vegas</cite> is one of the most famous works of Hunter Thompson.
+        </p>
+        <span><code>q</code></span>
+        <p>
+            <q>... тайна человеческого бытия не в том, чтобы только жить, а в том, для чего жить</q>, говорил Федор Михайлович Достоевский
+        </p>
+        <span><code>abbr</code></span>
+        <p>
+            <abbr title="International Union for Pure and Applied Chemistry">IUPAC</abbr>
+        </p>
+        <span><code>address</code></span>
+        <address>
+            Anna Example <br/>
+            321 Khreshchatyk str. <br/>
+            App. No 123 <br/>
+            Kyiv <br/>
+            Ukraine
+        </address>
+    </div>
 
 </body>
 </html>

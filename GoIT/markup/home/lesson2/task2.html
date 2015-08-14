@@ -4,8 +4,16 @@
     <meta charset="UTF-8">
     <title>Lesson 2. Task 2</title>
     <style type="text/css">
-        table { border-collapse: collapse; width: 400px;}
-        td { border: 5px solid #000; }
+        table {
+            border-collapse: collapse;
+            width: 300px;
+        }
+        td {
+            border: 5px solid #000;
+        }
+        .hidden-cells {
+            visibility: hidden;
+        }
     </style>
 </head>
 <body>
@@ -20,24 +28,22 @@
             <td bgcolor="#ffffff" rowspan="2"><br/></td>
             <td bgcolor="#ff5b2d" rowspan="4" colspan="4"><br/></td>
             <td bgcolor="#fffa69" rowspan="2" colspan="2"><br/></td>
-
+            <td class="hidden-cells"><br/></td>
         </tr>
 
         <tr id="row3">
-
-          <td><br/></td>
+            <td class="hidden-cells"><br/></td>
         </tr>
 
         <tr id="row4">
             <td bgcolor="#ffffff" rowspan="3"><br/></td>
             <td bgcolor="#ffffff" rowspan="2"><br/></td>
             <td bgcolor="#ffffff" rowspan="2"><br/></td>
-            <td><br/></td>
+            <td class="hidden-cells"><br/></td>
         </tr>
 
         <tr id="row5">
-
-            <td><br/></td>
+            <td class="hidden-cells"><br/></td>
         </tr>
 
         <tr id="row6">
@@ -55,14 +61,11 @@
         <tr id="row8">
             <td bgcolor="#ffffff" rowspan="2" colspan="2"><br/></td>
             <td bgcolor="#000000" colspan="2"><br/></td>
-
         </tr>
 
         <tr id="row9">
             <td bgcolor="#ffffff" colspan="4"><br/></td>
-
         </tr>
-
     </table>
 </body>
 </html>
