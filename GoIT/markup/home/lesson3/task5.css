@@ -1,0 +1,15 @@
+table, td {
+    border-collapse: collapse;
+}
+td {
+    padding: 5px 10px;
+    border-bottom: 1px solid #ccc;
+}
+/*sets blue color for even rows*/
+tr:nth-of-type(2n) {
+    background-color: #ddebf7;
+}
+/*sets beige color for odd columns starting from the third one*/
+td:nth-of-type(2n+3) {
+    background-color: #f2f2de;
+}

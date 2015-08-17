@@ -1,0 +1,14 @@
+/*orange color for external links*/
+[href ^= "http"] {
+    color: #f70;
+}
+/*grey color for google links*/
+[href *= "google"] {
+    color: #666;
+}
+/*utf-8 arrow after an element to be opened in the new tab*/
+a[target ="_blank"]:after {
+    content: " \21f1"; /*arrow inserted*/
+    display: inline-block; /*arrow display changed to inline-block*/
+    transform: scaleX(-1); /*arrow is inverted*/
+}
