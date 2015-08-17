@@ -1,9 +1,10 @@
 body {
     margin: 10px;
+    font-size: 1.3em;
 }
 /*style for paragraphs*/
-p:first-letter {
-    font-size: 30px;
+p::first-letter {
+    font-size: 2em;
     color: red;
 }
 h1 {

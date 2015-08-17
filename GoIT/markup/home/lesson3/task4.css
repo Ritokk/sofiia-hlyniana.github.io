@@ -1,4 +1,8 @@
 /*orange color for external links*/
+
+body {
+    font-size: 2em;
+}
 [href ^= "http"] {
     color: #f70;
 }
@@ -7,7 +11,7 @@
     color: #666;
 }
 /*utf-8 arrow after an element to be opened in the new tab*/
-a[target ="_blank"]:after {
+a[target ="_blank"]::after {
     content: " \21f1"; /*arrow inserted*/
     display: inline-block; /*arrow display changed to inline-block*/
     transform: scaleX(-1); /*arrow is inverted*/
