@@ -1,0 +1,28 @@
+/*violet line for menu*/
+.nav-area {
+    font-family:  Impact, Charcoal, sans-serif;
+    background-color: #9f5bff;
+}
+/*navigation bar with all the buttons*/
+.nav-bar {
+    width: 900px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    text-align: center;
+}
+/*style for each navigation button*/
+.nav-bar a {
+    display: inline-block;
+    height: 40px;
+    font-size: 1.5em;
+    color: #ffffff;
+    padding: 5px 10px;
+    text-decoration: none;
+    line-height: 1.5em;
+}
+/*style for hover effect*/
+.nav-bar a:hover {
+    color: #666666;
+    background-color: #d7cdff;
+    box-shadow: 0 -2px 4px #adadad, 0 2px 4px #adadad;
+}
