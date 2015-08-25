@@ -1,27 +1,30 @@
-/*violet line for menu*/
-.nav-area {
-    font-family:  Impact, Charcoal, sans-serif;
+nav {
     background-color: #9f5bff;
-}
-/*navigation bar with all the buttons*/
-.nav-bar {
-    width: 900px;
+    width: 100%;
     box-sizing: border-box;
-    margin: 0 auto;
-    text-align: center;
 }
-/*style for each navigation button*/
-.nav-bar a {
-    display: inline-block;
-    height: 40px;
-    font-size: 1.5em;
-    color: #ffffff;
-    padding: 5px 10px;
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 900px;
+    overflow: hidden;
+}
+a {
     text-decoration: none;
-    line-height: 1.5em;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: Economica, sans-serif;
+    font-weight: 700;
+}
+ul li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+li:last-child {
+    float: right;
 }
 /*style for hover effect*/
-.nav-bar a:hover {
+li:hover {
     color: #666666;
     background-color: #d7cdff;
     box-shadow: 0 -2px 4px #adadad, 0 2px 4px #adadad;

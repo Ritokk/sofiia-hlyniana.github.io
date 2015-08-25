@@ -1,0 +1,28 @@
+nav {
+    background-color: #9f5bff;
+    width: 100%;
+    box-sizing: border-box;
+}
+ul {
+    list-style-type: none;
+    margin: 0 auto;
+    width: 900px;
+    overflow: hidden;
+}
+a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: Economica, sans-serif;
+    font-weight: 700;
+}
+ul li {
+    display: inline-block;
+    padding: 5px 10px;
+}
+/*style for hover effect*/
+li:hover {
+    color: #666666;
+    background-color: #d7cdff;
+    box-shadow: 0 -2px 4px #adadad, 0 2px 4px #adadad;
+}
