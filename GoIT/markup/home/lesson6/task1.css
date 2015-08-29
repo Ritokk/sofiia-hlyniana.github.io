@@ -1,0 +1,118 @@
+div.offers  {
+    font-family: "Trebuchet MS", sans-serif;
+    width: 900px;
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 0;
+}
+div.all-blocks {
+    margin: 0 auto;
+    width: 870px;
+}
+h2, h3, p, button {
+    text-transform: uppercase;
+    font-weight: 700;
+    margin: 0;
+    text-align: center;
+}
+h2 {
+    padding: 30px 0 50px 0;
+    color: #41525c;
+    width: 870px;
+}
+h3 {
+    color: #ffffff;
+    padding: 25px 0;
+}
+div.white-layout h3 {
+    color: #414244;
+}
+div.standard, div.best, div.ultimate {
+    display: inline-block;
+    width: 280px;
+    float: left;
+    border-radius: 5px;
+}
+div.standard, div.ultimate {
+    position: relative;
+    border: 1px solid #edeef0;
+    z-index: 1;
+}
+div.standard {
+    background-color: #37c1d2;
+}
+div.best {
+    border: 5px solid #eb8036;
+    background-color: #eb8036;
+    box-shadow: 0 0 4px 3px #cbe2ef;
+    position: relative;
+    z-index: 2;
+    margin-top: -5px;
+}
+div.ultimate {
+    background-color: #1cb699;
+}
+div.white-layout {
+    background-color: #ffffff;
+    color: #364959;
+    padding: 10px;
+}
+ul {
+    margin-left: -38px;
+    list-style-type: none;
+}
+li {
+    display: block;
+    padding: 10px;
+    color: #878b93;
+    font-size: 12pt;
+    margin-bottom: 2px;
+}
+li:before {
+    content: url(marker.png);
+    margin-left: 20px;
+    margin-right: 15px;
+}
+li:nth-of-type(odd) {
+    background-color: #ecf4fb;
+}
+li:nth-of-type(even) {
+    background-color: #f3f4f5;
+}
+button {
+    color: #ffffff;
+    display: block;
+    margin: 0 auto;
+    padding: 12px 70px;
+    font-size: 10pt;
+    border-radius: 6px;
+}
+button.standard, button.ultimate {
+    background-color: #3371a5;
+}
+button.best {
+    background-color: #eb8036;
+    margin-bottom: 8px;
+}
+button.best:hover {
+    box-shadow: 0 3px 2px #b3560b;
+}
+button:not(.best):hover {
+    box-shadow: 0 3px 2px #16436a ;
+}
+p.price-value {
+    font-size: 52pt;
+    margin-left: 20px;
+}
+p.price-value:after {
+    content: "Monthly";
+    display: inline-block;
+    font-size: 12pt;
+    text-transform: none;
+}
+p.price-value:before {
+    content: "$";
+    vertical-align: super;
+    display: inline-block;
+    font-size: 18pt;
+}
