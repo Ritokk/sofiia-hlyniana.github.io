@@ -4,34 +4,119 @@
     <meta charset="UTF-8">
     <title></title>
     <style>
-        h2 {
-
+        section {
+            width: 1400px;
+            background: url(images/background-image.png) no-repeat scroll;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Trebuchet MS", sans-serif;
+            overflow: hidden;
         }
-        /*background-size
-        comment text height fixed
-        img: float:left, height, width
-        comment: position:relative
-        MAKE 4 TESTIMONIALS (2 LOWER)*/
+        h2 {
+            padding: 50px 0;
+            color: #2f6b9f;
+            text-transform: uppercase;
+            text-align: center;
+        }
+        div {
+            display: inline-block;
+            box-sizing: border-box;
+        }
+        div.comment-author, div.author-role {
+            color: #5f8eb9;
+            font-style: italic;
+            font-size: 12pt;
+        }
+        div.comment-author:nth-of-type(odd), div.customer:nth-of-type(odd) {
+            float: left;
+        }
+        div.comment-author:nth-of-type(even), div.customer:nth-of-type(even) {
+            float: right;
+        }
+        span {
+            color: #e17b29;
+        }
+        div.testimonials, h2 {
+            position: relative;
+            width: 1000px;
+            margin: auto;
+            left:0;
+            right:0;
+            top:0;
+            bottom:0;
+        }
+        div.customer  {
+            position: relative;
+            /*width: 50%;*/
+            margin-left: 100px;
+        }
+
+        div.comment-cloud {
+            position: relative;
+            color: #818181;
+            font-size: 12pt;
+            width: 350px;
+            height: 100px;
+            background-color: #ffffff;
+            padding: 8px 18px 20px 8px;
+        }
+        div.comment-avatar {
+            position: absolute;
+            left:-110px;
+            top:0;
+        }
+
+        div.comment-author {
+            float:left;
+            width: 50%;
+        }
+        div.author-role {
+            float: right;
+            width: 50%;
+            text-align: right;
+        }
+        div.testimonials-text {
+            clear: both;
+            border-top: 2px dotted #9e9e9e;
+            padding-left: 0;
+            overflow: hidden;
+            text-overflow:ellipsis;
+        }
+
     </style>
 </head>
 <body>
-    <div class="testimonials">
+    <section>
         <h2><span class="orange-text">what</span> client says</h2>
-        <div class="comment">
-            <img src="" alt=""/>
-            <div class="triangle"></div>
-            <div class="text">
-                <h3>Staciya Trollio</h3>
-                <h3>Customer</h3>
-                <p>lorem</p>
+        <div class="testimonials">
+            <div class="customer">
+                <div class="comment-avatar"><img src="images/customer-1.png" alt="Staciya Trollio"/></div>
+                <div class="comment-cloud">
+                        <div class="comment-author">Staciya Trollio</div>
+                        <div class="author-role">Customer</div>
+                        <div class="testimonials-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Atque autem culpa dicta, laboriosam nesciunt perferendis placeat soluta totam voluptatum?
+                            Asperiores at doloribus earum hic incidunt labore libero rerum sunt, voluptatem?
+                        </div>
+                </div>
+            </div>
+            <div class="customer">
+                <div class="comment-avatar"><img src="images/customer-2.png" alt="David Soul"/></div>
+                <div class="comment-cloud">
+                        <div class="comment-author">David Soul</div>
+                        <div class="author-role">Customer</div>
+                        <div class="testimonials-text">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                            Atque autem culpa dicta, laboriosam nesciunt perferendis placeat soluta totam voluptatum?
+                            Asperiores at doloribus earum hic incidunt labore libero rerum sunt, voluptatem?
+                        </div>
+                </div>
+
             </div>
         </div>
-        <div class="comment">
-            <img src="" alt=""/>
-            <h3></h3>
-
-        </div>
-    </div>
+    </section>
 
 </body>
 </html>
